@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>Red Bull - Gives You Wings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="home">
+    <h1>Red Bull</h1>
+    <h2>Gives You Wings</h2>
+  </header>
+
+  <section id="products">
+    <h3>Popular's</h3>
+    <p>Red Bull produces energy drinks that help boost mental and physical performance. The classic Red Bull Energy Drink remains a favorite for everyone
+    <img src="https://media.istockphoto.com/id/459003829/photo/red-bull-energy-drink-can.jpg?s=612x612&w=0&k=20&c=zkGx5-GC45fqvSlYk1xC7sdyQSO6TK3Lewmp8P9YIOo=" class="rounded-img">
+  </section>
+
+  <section id="sports">
+    <h3>Red Bull and Extreme Sports</h3>
+    <p>Red Bull invests heavily in extreme sports, sponsoring athletes and organizing events like cliff diving, air racing, and Formula 1 racing.</p>
+    <img src="https://www.tcp.com/storage/content/product/energy-drink/kratingdaeng/kratingdaeng-7.png" class="rounded-img">
+  </section>
+
+  <section id="about">
+    <h3>About Red Bull
+    <p>Founded in Austria in 1987, Red Bull revolutionized the beverage industry and remains a market leader in energy drinks. The brand’s mission is to energize body and mind.</p>
+  </section>
+
+  <script>
+    document.addEventListener('mousemove', function(e) {
+      const dot = document.createElement('div');
+      dot.classList.add('trail-dot');
+      dot.style.left = e.pageX + 'px';
+      dot.style.top = e.pageY + 'px';
+      document.body.appendChild(dot);
+      setTimeout(() => {
+        dot.remove();
+      }, 300);
+    });
+  </script>
+</body>
+</html>
